@@ -9,20 +9,20 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.anbuzhobbiez</groupId>
-	<artifactId>spannerdemo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>GcpSpringDemo</artifactId>
+	<version>0.0.1</version>
 	<name>spannerdemo</name>
 	<description>Demo project for Spring Boot GCP Spanner Demo</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 		<spring-cloud-gcp.version>3.4.0</spring-cloud-gcp.version>
 		<spring-cloud.version>2021.0.4</spring-cloud.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-data-rest</artifactId>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -31,15 +31,15 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.google.cloud</groupId>
-			<artifactId>spring-cloud-gcp-starter</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.google.cloud</groupId>
-			<artifactId>spring-cloud-gcp-starter-data-spanner</artifactId>
-			<version>3.4.0</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.google.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-gcp-starter</artifactId>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>com.google.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-gcp-starter-data-spanner</artifactId>-->
+<!--			<version>3.4.0</version>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
