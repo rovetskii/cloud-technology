@@ -12,7 +12,7 @@ steps:
   # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args:[ 'beta','run', 'deploy', '$_SERVICE_NAME', '--platform=managed', ,'--region=$_DEPLOY_REGION', '--image=gcr.io/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA']
+    args: ['run', 'deploy', '$_SERVICE_NAME', '--platform=managed', ,'--region=$_DEPLOY_REGION', '--image=gcr.io/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA']
 options:
   logging: CLOUD_LOGGING_ONLY
 
