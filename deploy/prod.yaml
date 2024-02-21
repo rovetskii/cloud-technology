@@ -1,0 +1,11 @@
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+  name: prod
+  annotations: {}
+  labels: {}
+description: prod
+requireApproval: true
+gke:
+  cluster: projects/gcp-simple-spring-microservice/locations/us-central1/clusters/autopilot-cluster-1
+
