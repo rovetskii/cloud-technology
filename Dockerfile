@@ -32,5 +32,5 @@ RUN mvn clean install -DskipTests
 
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY --from=build /app/target/spring-simple-service-demo-0.0.1-SNAPSHOT.jar /app.jar
+COPY --from=build /app/target/GcpSpringDemo-0.0.1.jar /app.jar
 ENTRYPOINT ["java", "-jar", "/app.jar"]
