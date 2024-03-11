@@ -28,8 +28,8 @@ steps:
         "--platform",
         "managed",
         "--allow-unauthenticated",
-        "--service-account",
-        "$_SA"
+#        "--service-account",
+#        "$_SA"
       ]
 options:
   logging: CLOUD_LOGGING_ONLY
