@@ -28,7 +28,7 @@ steps:
         "--platform",
         "managed",
         "--allow-unauthenticated",
-        "--trigger-service-account",
+        "--service-account",
         "$_SA"
       ]
 options:
