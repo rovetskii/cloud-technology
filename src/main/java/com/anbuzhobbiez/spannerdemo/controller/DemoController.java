@@ -20,7 +20,7 @@ public class DemoController {
 //        return "Hello "+name;
 //    }
 
-    @GetMapping("/greet/{name}")
+    @GetMapping("/{name}")
     public String greet(@PathVariable String name){
         return "Hello "+name;
     }
