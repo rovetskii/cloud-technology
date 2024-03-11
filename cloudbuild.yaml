@@ -12,6 +12,9 @@ steps:
   # Deploy container image to Cloud Run
   # - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   #   entrypoint: gcloud
+
+
+
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       [
@@ -32,5 +35,5 @@ options:
 images: [gcr.io/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA]
 
 substitutions:
-  _SERVICE_NAME: simple-spring-app-cicd
+  _SERVICE_NAME: cloud-build-cicd
   _DEPLOY_REGION: us-central1
