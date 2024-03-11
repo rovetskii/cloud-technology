@@ -38,5 +38,5 @@ images: [gcr.io/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA]
 
 substitutions:
   _SERVICE_NAME: cloud-build-cicd-2
-  _SA: 345713096134-compute@developer.gserviceaccount.com
+  _SA: service-run-sa@gcp-simple-spring-microservice.iam.gserviceaccount.com
   _DEPLOY_REGION: us-central1
