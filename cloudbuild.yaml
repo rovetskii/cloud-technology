@@ -27,8 +27,8 @@ steps:
         "$_DEPLOY_REGION",
         "--platform",
         "managed",
-        "--allow-unauthenticated"
-        "--service-account"
+        "--allow-unauthenticated",
+        "--service-account",
         "345713096134-compute@developer.gserviceaccount.com"
       ]
 options:
