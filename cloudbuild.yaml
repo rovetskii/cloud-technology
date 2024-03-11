@@ -12,9 +12,6 @@ steps:
   # Deploy container image to Cloud Run
   # - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   #   entrypoint: gcloud
-
-
-
   - name: "gcr.io/cloud-builders/gcloud"
     args:
       [
@@ -27,9 +24,7 @@ steps:
         "$_DEPLOY_REGION",
         "--platform",
         "managed",
-        "--allow-unauthenticated",
-        "--service-account",
-        "345713096134-compute@developer.gserviceaccount.com"
+        "--allow-unauthenticated"
       ]
 options:
   logging: CLOUD_LOGGING_ONLY
@@ -37,5 +32,5 @@ options:
 images: [gcr.io/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA]
 
 substitutions:
-  _SERVICE_NAME: cloud-build-cicd
+  _SERVICE_NAME: cloud-build-cicd-1
   _DEPLOY_REGION: us-central1
