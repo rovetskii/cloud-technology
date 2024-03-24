@@ -10,6 +10,6 @@ public class DemoController {
 
     @GetMapping("/{name}")
     public String getName(@PathVariable String name){
-        return "This is "+name;
+        return "Parameter was passed: "+name;
     }
 }
