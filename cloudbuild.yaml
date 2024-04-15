@@ -24,7 +24,9 @@ steps:
         "$_DEPLOY_REGION",
         "--platform",
         "managed",
-        "--allow-unauthenticated"
+        "--allow-unauthenticated",
+#        "--service-account",
+#        "$_SA"
       ]
 options:
   logging: CLOUD_LOGGING_ONLY
@@ -32,5 +34,6 @@ options:
 images: [gcr.io/$PROJECT_ID/$_SERVICE_NAME:$COMMIT_SHA]
 
 substitutions:
-  _SERVICE_NAME: simple-spring-app-cicd
+  _SERVICE_NAME: cloud-build-cicd-2
+#  _SA: service-run-sa@gcp-simple-spring-microservice.iam.gserviceaccount.com
   _DEPLOY_REGION: us-central1
